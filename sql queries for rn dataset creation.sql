@@ -39,7 +39,6 @@ SELECT rn_retention_reengagement.rn.*, rn_lead_values.active_in_state_next, rn_l
 ORDER BY person_id, YEAR);
 
 -- Step 2: Extract data from previously created table for analysis and visualization
-
 -- RNs who failed to renew license at end of 2 year cycle (2023 or active_in_state_next_2) became inactive or 'exited' the workforce
 SELECT *, 'inactive' as status
 FROM rn_retention_reengagement.analysis_cohort_2021_2023
